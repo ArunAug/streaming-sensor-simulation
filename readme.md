@@ -17,23 +17,7 @@ This project demonstrates an end-to-end **real-time streaming pipeline** using:
 
 ## 🧱 Project Structure
 
-streaming-sensor-simulation/
-│
-├── simulator/ # Kafka producer sending fake sensor data
-│ └── sensor_producer.py
-│
-├── streaming/ # PySpark job consuming and processing the stream
-│ └── sensor_streaming_job.py
-│
-├── notebooks/ # Optional notebooks for visualization/EDA
-│ └── analysis.ipynb
-│
-├── docker-compose.yml # Kafka + Zookeeper setup
-├── requirements.txt # Python dependencies
-├── .github/workflows/ # CI pipeline
-│ └── python-ci.yml
-├── .gitignore
-└── README.md
+<pre> streaming-sensor-simulation/ ├── simulator/ # Kafka producer sending fake sensor data │ └── sensor_producer.py │ ├── streaming/ # PySpark job consuming and processing the stream │ └── sensor_streaming_job.py │ ├── notebooks/ # Optional notebooks for visualization/EDA │ └── analysis.ipynb │ ├── .github/ │ └── workflows/ # CI/CD pipeline configuration │ └── python-ci.yml │ ├── docker-compose.yml # Kafka + Zookeeper setup ├── requirements.txt # Python dependencies ├── .gitignore # Git ignore rules └── README.md # Project documentation </pre>
 
 ---
 
